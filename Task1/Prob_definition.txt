@@ -1,0 +1,12 @@
+Task1：
+老问题，做一个关键帧动画播放的界面。使用连续播放jpg图片来模拟动画效果
+
+需要用到的控件：
+UIImageView、UIButton、UISlider、UILabel
+
+需要用到的API：
+UIImageView自带的animationImages
+
+参考文档：
+https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImageView_Class/Reference/Reference.html （官方）
+http://blog.sina.com.cn/s/blog_71715bf8010127fc.html 
