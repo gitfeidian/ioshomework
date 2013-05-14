@@ -1,0 +1,19 @@
+Task2：
+实现一个简单的点菜程序。在第一个界面实现多选的一个列表，点击“完成”按钮后，进入一个新的列表，里面是已点的菜。
+额外的要求：第一次点击这个菜名时勾选，第二次点击时勾选消失
+
+
+
+涉及到的控件：
+UINavigationController、UITableView、UITableViewCell
+
+涉及到的方法：
+继承UITableViewDelegate、UITableViewDataSource的方法
+
+提示：
+这次涉及到的知识点复杂些，可能有些同学无法下手，我给点提示。
+（1）建立一个MainViewController作为菜单，里面添加UITableView来显示
+（2）主要的操作就是通过tableView来管理两个NSMutableArray （数组），一个是所有菜的，一个是已点的菜。注意NSArray是静态数组，需要动态添加的话需要用NSMutableArray类。关于Objective-C的数组操作是经常要用到的内容。
+（3）建立第二个界面（OrderedViewController）来显示已选的菜，这时候要从MainViewController取那个已点菜的数组用什么方法呢？复习一下Objective-C里面关于类成员的介绍就清楚了。当然你是从MainViewController里面进来的，所以把这个数组作为参数传递给OrderedViewController也是一种方法。
+（4）两个界面之间的切换建议使用UINavigationController ，就是上面那个导航栏一样的东西。
+（5）你们在使用UITableView这个控件的时候会遇到一个叫delegate的东西。如果各位认真看过O-C的教材应该知道O-C不可以进行多重继承的，所以delegate在这里扮演了多重继承的“代理”，这里有点不好理解，如果在使用中觉得有困难欢迎问我——当然问Google可能更快些。
